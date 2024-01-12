@@ -11,7 +11,7 @@ public class Consumer {
     private final Logger logger = Logger.getLogger(Consumer.class.getName());
     @RabbitListener(queues = {"queue"})
     public void receiveName(String name) {
-        var message = "I will not say hello world! : " + name + " -> " + LocalDate.now();
+        var message = "I will dance a moon walk! : " + name + " -> " + LocalDate.now();
         logger.info(message);
     }
 }

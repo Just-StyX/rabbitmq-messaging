@@ -11,7 +11,7 @@ public class GeneralConfiguration {
     @Bean
     ApplicationRunner applicationRunner(Producer producer) {
         return args1 -> {
-            producer.sentName("Michael Jordan");
+            producer.sentName("Michael Jackson");
         };
     }
 }
